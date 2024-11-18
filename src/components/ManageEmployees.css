@@ -1,0 +1,155 @@
+/* Import the Gothic/Blackletter font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Apply vintage brown background to the whole page */
+.manageemployee-page {
+    font-family: 'MedievalSharp', sans-serif; /* Gothic/Blackletter font */
+    margin: 0;
+    padding: 0;
+    background-color: #C2A684; /* Vintage brown background */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqqrgubM6qKAhyfuncOofG9W2KAhSp0o9sQ&s');
+    background-size: cover;
+    color: #000000; /* Vintage black text */
+}
+
+/* Main container for the entire Manage Employees page */
+.manage-employees-container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sort-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sort-label {
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.sort-dropdown {
+    background-color: #f2e1c1; /* Vintage brown background */
+    border: 1px solid #333; /* Dark border */
+    padding: 8px 12px;
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.sort-dropdown:hover {
+    background-color: #e1c1a1; /* Lighter vintage brown on hover */
+    color: #fff; /* Change text to white */
+}
+
+/* Active state when an option is selected */
+.sort-dropdown:focus {
+    outline: none;
+    background-color: #d0a56f; /* Slightly darker brown when focused */
+    color: #fff;
+}
+
+
+/* Page Title */
+.manage-employees-container .page-title {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Section for adding new employee */
+.manage-employees-container .add-employee-section {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.manage-employees-container .add-employee-section input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    background-color: #FFF8E1; /* Light vintage color */
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-employees-container .add-employee-section button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #D7B3A1; /* Vintage beige button */
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-employees-container .add-employee-section button:hover {
+    background-color: #B59F8D;
+}
+
+/* Employee List */
+.manage-employees-container .employee-list-title {
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.manage-employees-container .employee-list {
+    list-style: none;
+    padding: 0;
+}
+
+.manage-employees-container .employee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-employees-container .remove-button {
+    background-color: #D32F2F;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-employees-container .remove-button:hover {
+    background-color: #B71C1C;
+}
+
+/* Chart Section */
+.manage-employees-container .chart-title {
+    font-size: 1.6rem;
+    color: #000;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Ensure all elements have consistent styling */
+.manage-employees-container input, .manage-employees-container button {
+    font-family: 'MedievalSharp', sans-serif;
+}

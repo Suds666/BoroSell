@@ -1,0 +1,113 @@
+/* General body styling */
+.profile-page {
+    font-family: 'Chakra Petch', sans-serif;
+    background-image: url('C:/Users/strik/Downloads/sudsudbms/borosell/src/assets/jason-mavrommatis-GPPAjJicemU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    overflow-y: auto; /* Allow scrolling */
+    min-height: 100vh;
+  }
+  
+  /* Main container adjustments */
+  .profile-page {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 100%; /* Full width */
+    width: 100%; 
+  }
+  
+  .profile-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .profile-page h2,
+  .profile-page h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: black;
+  }
+  
+  /* Transaction list grid layout */
+  .transaction-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive full-width grid */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+  }
+  
+  .transaction-item {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .transaction-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .transaction-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover effect for displaying transaction details */
+  .transaction-details {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: left;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 10;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .transaction-item:hover .transaction-details {
+    display: block;
+  }
+  
+  .transaction-details p {
+    margin: 5px 0;
+  }
+  
+  .transaction-details span {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .transaction-item {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .transaction-item {
+      width: 100%;
+    }
+  }
+  

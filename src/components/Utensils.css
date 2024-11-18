@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Import Montserrat font */
+
+/* Utensils page styling */
+.utensils-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Move content upwards */
+    background-image: url('../assets/joshua-newton-IRXYNAMlUtw-unsplash.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px 20px; /* Reduce padding */
+    position: relative;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px;
+    margin-bottom: 10px; /* Reduce space between logo and heading */
+}
+
+/* Heading styling */
+.utensils-heading {
+    font-size: 42px; /* Font size for heading */
+    color: red;
+    margin-top: 20px; /* Space above heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+/* Utensils container styling */
+.utensils-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    margin: 10px; /* Margin for compact look */
+}
+
+/* Utensils item and image styling */
+.utensils-item {
+    position: relative;
+    border: 4px solid grey; /* Border for circular items */
+    border-radius: 50%; /* Circular shape */
+    width: 250px; /* Width of each item */
+    height: 250px; /* Height of each item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7); /* Background for item */
+    backdrop-filter: blur(5px); /* Blur effect for item */
+    overflow: visible; /* Hide overflow */
+}
+
+.utensils-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+    width: 100%; /* Make button full width of the item */
+    height: 100%; /* Make button full height of the item */
+}
+
+/* Utensils image styling */
+.utensils-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Grayscale effect */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    position: relative;
+    z-index: 1;
+}
+
+.utensils-item:hover .utensils-image {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.utensils-button:hover .utensils-image {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.2); /* Scale up on hover */
+}

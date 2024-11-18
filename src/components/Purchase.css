@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Dosis:wght@400;700&display=swap'); /* Import Roboto Condensed and Dosis fonts */
+
+/* Purchase page styling */
+.purchase-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Move content upwards */
+    background-image: url('../assets/birmingham-museums-trust-HslbEeUauYA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px 20px; /* Reduce padding */
+    position: relative;
+    font-family: 'Dosis', sans-serif; /* Set Dosis as the default font for the page */
+}
+
+/* Logo styling */
+.logo {
+    width: 150px; /* Adjusted logo size */
+    margin-bottom: 10px; /* Space between logo and heading */
+}
+
+/* Heading styling */
+.purchase-heading {
+    font-size: 42px; /* Font size for heading */
+    color: black;
+    margin-top: 20px; /* Move the heading up */
+    margin-bottom: 30px; /* Space between heading and purchases */
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif; /* Use Roboto for headings */
+}
+
+/* Purchase container styling */
+.purchase-container {
+    justify-items: center; /* Center items horizontally */
+    margin: 10px; /* Reduced margin for a more compact look */
+}
+
+/* Purchase item and image styling */
+.purchase-item {
+    position: relative;
+    border: 4px solid #4a3e2b; /* Border for circular items */
+    border-radius: 50%; /* Circular shape */
+    width: 250px; /* Width of each item */
+    height: 250px; /* Height of each item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7); /* Background for item */
+    backdrop-filter: blur(5px); /* Blur effect for item */
+    overflow: visible; /* Hide overflow */
+}
+
+.purchase-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+    width: 100%; /* Make button full width of the item */
+    height: 100%; /* Make button full height of the item */
+}
+
+/* Purchase image styling */
+.purchase-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Grayscale effect */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    position: relative;
+    z-index: 1;
+}
+
+.purchase-item:hover .purchase-image {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.4); /* Scale up on hover */
+}
+
+.purchase-button:hover .purchase-image {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.4); /* Scale up on hover */
+}
+
+/* Date picker styles */
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.date-picker {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 2px solid #4a3e2b;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.total-price {
+    font-size: 24px;
+    color: #4a3e2b;
+    margin-top: 20px;
+}
+
+/* New Grocery gif and static image in the bottom right */
+.grocery-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+    width: 150px;
+    height: 150px;
+}
+
+.grocery-static {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grocery-gif {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0; /* Initially hide the GIF */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grocery-wrapper:hover .grocery-gif {
+    opacity: 1; /* Show the GIF on hover */
+}
+
+.grocery-wrapper:hover .grocery-static {
+    opacity: 0; /* Hide the static image on hover */
+}
+
+/* Quantity input styling */
+.quantitypur-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.quantitypur-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: 2px solid #4a3e2b;
+    border-radius: 5px;
+    width: 60px; /* Set width for the quantity input */
+    text-align: center; /* Align number in the center */
+}

@@ -1,0 +1,23 @@
+/* src/components/Bill.css */
+.bill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('C:/Users/strik/Downloads/sudsudbms/borosell/src/assets/luca-nicoletti-slKIsnRvaS4-unsplash.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bill {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px; /* Set a fixed width for the bill */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Import Montserrat font */
+
+.choice-page {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow during transition */
+}
+
+.choice-button {
+  flex: 1;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Background styles for Borrow, Sell, and Return buttons */
+.boro-button {
+  background-image: url('../assets/birmingham-museums-trust-sJr8LDyEf7k-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sell-button {
+  background-image: url('../assets/birmingham-museums-trust-NspHfyZnMBE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.return-button {
+  background-image: url('C:/Users/strik/Downloads/sudsudbms/borosell/src/assets/birmingham-museums-trust-0pJPixfGfVo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hover effect for all buttons */
+.choice-button:hover {
+  transform: scale(1.05);
+}
+
+/* Curtain fall animation for page transitions */
+.curtain-fall {
+  animation: curtainFall 0.5s forwards;
+}
+
+@keyframes curtainFall {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}

@@ -1,0 +1,98 @@
+/* Import the Gothic/Blackletter font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Apply vintage brown background to the whole page */
+.mostrented-report-page {
+    font-family: 'MedievalSharp', sans-serif; /* Gothic/Blackletter font */
+    margin: 0;
+    padding: 0;
+    background-color: #C2A684; /* Vintage brown background */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqqrgubM6qKAhyfuncOofG9W2KAhSp0o9sQ&s');
+    background-size: cover;
+    color: #000000; /* Vintage black text */
+}
+
+/* Main container for the Most Rented Products page */
+.mostrented-report-container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Page Title */
+.mostrented-report-container .page-title {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Product list section */
+.mostrented-report-container .report-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mostrented-report-container .report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #FFF; /* White background for each item */
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.mostrented-report-container .product-name {
+    font-weight: bold;
+    color: #000;
+}
+
+.mostrented-report-container .rent-count {
+    color: #777;
+}
+
+/* If no report data is available */
+.mostrented-report-container .no-report-item {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Make sure this page is responsive */
+@media (max-width: 768px) {
+    .mostrented-report-container {
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .report-item {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ensure the chart container has some space around it and is centered */
+.mostrented-report-container .chart-container {
+    margin-top: 40px;
+    max-width: 600px; /* Adjust to make the chart smaller */
+    height: 600px; /* Set a fixed height for the chart */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive styling for the pie chart */
+@media (max-width: 768px) {
+    .mostrented-report-container .chart-container {
+        max-width: 200px; /* Make chart smaller on smaller screens */
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}

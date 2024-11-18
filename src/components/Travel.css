@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Import Montserrat font */
+
+/* Travel page styling */
+.travel-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Move content upwards */
+    background-image: url('../assets/anders-jilden-nrLtvA05jk8-unsplash.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px 20px; /* Reduce padding */
+    position: relative;
+}
+
+.travel-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+    width: 100%; /* Make button full width of the item */
+    height: 100%; /* Make button full height of the item */
+}
+
+/* Optional: Add hover effects for button */
+.travel-button:hover .travel-image {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+/* Logo styling */
+.logo {
+    width: 150px;
+    margin-bottom: 10px; /* Reduce space between logo and heading */
+}
+
+/* Heading styling */
+.travel-heading {
+    font-size: 42px; /* Font size for heading */
+    color: black;
+    margin-top: 20px; /* Space above heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+/* Travel container styling */
+.travel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    margin: 10px; /* Margin for compact look */
+}
+
+/* Travel item and image styling */
+.travel-item {
+    position: relative;
+    border: 4px solid rgb(194, 141, 42); /* Border for circular items */
+    border-radius: 50%; /* Circular shape */
+    width: 250px; /* Width of each item */
+    height: 250px; /* Height of each item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7); /* Background for item */
+    backdrop-filter: blur(5px); /* Blur effect for item */
+    overflow: visible; /* Hide overflow */
+}
+
+.travel-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Grayscale effect */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    position: relative;
+    z-index: 1;
+}
+
+.travel-item:hover .travel-image {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.2); /* Scale up on hover */
+}

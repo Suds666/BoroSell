@@ -1,0 +1,152 @@
+/* General dashboard styles */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the items at the top initially */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 50px; /* This will push the content down */
+}
+
+/* Welcome message styles with feather/leaf-like animation */
+.welcome-message-dashboard {
+  position: absolute;
+  top: 40%; /* Adjusted to start closer to the middle */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally */
+  font-family: 'Barlow', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  animation: leafFall 3s ease-in-out forwards; /* Only apply the fall animation */
+}
+
+/* Choose category text styles */
+.choose-category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Barlow', sans-serif;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards; /* Animation to fade in the text */
+  animation-delay: 3s; /* Start after the welcome message animation completes */
+}
+
+/* Keyframes for the feather/leaf-like animation */
+@keyframes leafFall {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, -30%) rotate(0deg); /* Start closer to the center */
+  }
+  20% {
+      opacity: 1;
+  }
+  50% {
+      transform: translate(-40%, 40%) rotate(-10deg); /* Fall with sway */
+  }
+  80% {
+      transform: translate(-60%, 50%) rotate(10deg); /* Near the center */
+  }
+  100% {
+      transform: translate(-50%, 50%) rotate(0deg); /* Land exactly in the center */
+  }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+  
+  .icons-row {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin-left: -200px; /* Adjust this value to move the icons left */
+  }  
+  
+  .gif-wrapper {
+    position: relative;
+    width: 200px; /* Increase size of the icons */
+    height: 200px;
+    margin: 0 15px; /* Add spacing between the icons */
+  }
+  
+  .gif-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hover-gif {
+    opacity: 0; /* Initially hide the GIF */
+  }
+  
+  .gif-wrapper:hover .hover-gif {
+    opacity: 1; /* Show the GIF on hover */
+  }
+  
+  .gif-wrapper:hover .gif-image:not(.hover-gif) {
+    opacity: 0; /* Hide the static image on hover */
+  }
+  
+  .profile-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+  }
+  
+  .profile-icon .profile-static {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-icon .profile-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-icon:hover .profile-static {
+    opacity: 0;
+  }
+  
+  .profile-icon:hover .profile-hover {
+    opacity: 1;
+  }
+  
+  .logout-button {
+    position: absolute;
+    top: 20px;  /* Position it at the top */
+    right: 110px;  /* Position it on the right */
+    cursor: pointer;
+    width: 40px;  /* Very small width for the logout icon */
+    height: 60px;  /* Very small height for the logout icon */
+  }
+  
+  /* Adjust the logout image size */
+  .logout-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Ensure it maintains aspect ratio */
+  }

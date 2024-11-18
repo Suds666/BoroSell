@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+/* General Page Styling */
+.sell-page {
+    font-family: 'Chakra Petch', sans-serif; /* Ensure this font is included in your project */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('C:\\Users\\strik\\Downloads\\sudsudbms\\borosell\\src\\assets\\andrew-kliatskyi-_3-5tqVvMkw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative; /* Allow positioning of child elements */
+}
+
+/* Content Wrapper */
+.sell-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    width: 100%;
+    max-width: 1200px;
+    gap: 100px; /* Adjust gap as needed */
+}
+
+/* Product Image Container */
+.productsell-image-container {
+    position: relative;
+    display: inline-block;
+    overflow: visible; /* Ensure the splash effect is visible */
+}
+
+/* Product Image */
+.productsell-image {
+    width: 500px; /* Increase the width to make the image larger */
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; /* Smoothly scale the image */
+    position: relative; /* Change from absolute to relative */
+}
+
+.productsell-image:hover {
+    transform: scale(1.1); /* Increase the image size on hover */
+}
+
+/* Color Splash Effect */
+.productsell-image-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%; /* Increased width to make splash more prominent */
+    height: 150%; /* Increased height to make splash more prominent */
+    background: url('../assets/—Pngtree—holi colors splash powder_9001436.png') no-repeat center;
+    background-size: contain;
+    transform: translate(-50%, -50%) scale(0.5); /* Initial splash scale */
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    pointer-events: none; /* Make sure the splash is not interactive */
+    
+}
+
+.productsell-image-container:hover::before {
+    transform: translate(-50%, -50%) scale(1.2); /* Enlarge the splash */
+    opacity: 1; /* Make the splash visible on hover */
+}
+
+/* Quantity Form Styling */
+.quantitysell-form {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-left: auto; /* Keep the form on the right */
+    width: 350px;
+}
+
+/* Product Name Styling */
+.productsell-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Quantity Label Styling */
+.quantitysell-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Quantity Input Field Styling */
+.quantitysell-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    outline: none;
+}
+
+/* Sell Button Styling */
+.sell-page-button {
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.sell-page-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}

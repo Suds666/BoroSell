@@ -1,0 +1,161 @@
+/* Import the Gothic/Blackletter font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Apply vintage brown background to the whole page */
+.manageproduct-page {
+    font-family: 'MedievalSharp', sans-serif; /* Gothic/Blackletter font */
+    margin: 0;
+    padding: 0;
+    background-color: #C2A684; /* Vintage brown background */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqqrgubM6qKAhyfuncOofG9W2KAhSp0o9sQ&s');
+    background-size: cover;
+    color: #000000; /* Vintage black text */
+}
+
+/* Main container for the entire Manage Products page */
+.manage-products-container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Page Title */
+.manage-products-container .page-title {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Section for fetching products */
+.manage-products-container .fetch-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.manage-products-container .category-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    background-color: #FFF8E1; /* Light vintage color */
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-products-container .fetch-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #D7B3A1; /* Vintage beige button */
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-products-container .fetch-button:hover {
+    background-color: #B59F8D;
+}
+
+manage-products-container .add-product-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    box-shadow: none; /* Ensure no shadow */
+}
+
+/* Target the input fields within the Add Product form */
+.manage-products-container .add-product-section input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #FFF8E1;
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+/* Button inside the Add Product form */
+.manage-products-container .add-product-section button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #D7B3A1;
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: none; /* Remove box-shadow */
+    margin-bottom: 40px;
+}
+
+.manage-products-container .add-product-section button:hover {
+    background-color: #B59F8D;
+}
+
+.manage-products-container .input-field {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #FFF8E1;
+    color: #000;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+/* Product List */
+.manage-products-container .product-list-title {
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.manage-products-container .product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.manage-products-container .product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-products-container .remove-button {
+    background-color: #D32F2F;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.manage-products-container .remove-button:hover {
+    background-color: #B71C1C;
+}
+
+/* Chart Section */
+.manage-products-container .chart-title {
+    font-size: 1.6rem;
+    color: #000;
+    margin-top: 50px;
+    text-align: center;
+}
